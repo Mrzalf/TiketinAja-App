@@ -1,0 +1,170 @@
+/* Reset some default styles */
+body,
+h1,
+p {
+  font-size: 15px; /* Sesuaikan ukuran teks sesuai kebutuhan */
+  line-height: 1.5; /* Menambahkan spasi antara baris */
+  margin-top: 10px; /* Menambahkan margin atas */
+  margin-bottom: 1px; /* Menambahkan margin bawah */
+  color: #ffffff; /* Sesuaikan warna teks sesuai kebutuhan */
+  text-align: justify;
+}
+
+.film-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100vh;
+}
+
+.film-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.82); /* Menambahkan latar belakang gelap */
+}
+
+img {
+  max-width: 70%;
+  max-height: 70%;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: brightness(1.2); /* Menambahkan filter peningkatan kecerahan */
+}
+
+.film-details {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  z-index: 1; /* Membawa elemen ini ke depan untuk menunjukkan teks dan tombol */
+}
+
+h1 {
+  font-size: 32px;
+  color: #ffffff; /* Warna kuning */
+  font-weight: bold; /* Menjadikan teks tebal */
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #001c30, black);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.rating {
+  font-size: 24px; /* Sesuaikan ukuran teks sesuai kebutuhan */
+  color: #ffffff; /* Warna putih */
+  font-weight: bold;
+  background: linear-gradient(to right, #001c30, black);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Menambahkan margin bawah */
+}
+
+.rating-text {
+  font-size: 20px; /* Sesuaikan ukuran teks sesuai kebutuhan */
+  margin-right: 10px; /* Sesuaikan margin antara teks dan bintang */
+  color: white; /* Warna putih */
+}
+
+.star {
+  font-size: 20px; /* Sesuaikan ukuran teks sesuai kebutuhan */
+  margin-right: 10px; /* Sesuaikan margin antara bintang */
+  color: #ffc800;
+}
+
+/* Gaya untuk tombol "Lihat Trailer" */
+.trailer-button {
+  margin-top: 20px; /* Jarak antara rating dan tombol */
+}
+
+.play-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffc800; /* Warna latar belakang kuning */
+  color: black; /* Warna teks hitam */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #001c30; /* Warna latar belakang yang berbeda saat dihover */
+  color: #ffc800;
+}
+
+.duration {
+  font-size: 20px; /* Sesuaikan ukuran teks sesuai kebutuhan */
+  color: white; /* Sesuaikan warna sesuai kebutuhan */
+  margin-left: 10px; /* Sesuaikan jarak dengan tombol sesuai kebutuhan */
+}
+
+#actor-section {
+  background-color: #001c30;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  height: 100vh; /* Mengatur tinggi hingga layar penuh */
+}
+
+.actor-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.actor-item {
+  width: calc(33.33% - 10px);
+  margin: 10px 0;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  background: linear-gradient(to bottom, black, #001c30); /* Latar belakang degradasi */
+  border-radius: 5px;
+}
+
+.actor-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.actor-item p {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.actor-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  background: linear-gradient(to bottom, #001c30, black); /* Latar belakang degradasi */
+}
+
+.actor-item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.actor-name {
+  font-weight: bold;
+}
+
+.character-name {
+  color: #ffc800; /* Ganti warna karakter '-' sesuai kebutuhan */
+}
+
+.menu {
+  justify-content: flex-end; /* Justifikasi menu ke kanan */
+  padding-right: 40px; /* Atur padding di sebelah kanan menu */
+}

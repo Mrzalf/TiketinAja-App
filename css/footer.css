@@ -1,0 +1,22 @@
+.footer {
+  background: linear-gradient(to right, #001c30, black);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer .logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.footer .website-name {
+  font-size: 24px;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: center;
+}

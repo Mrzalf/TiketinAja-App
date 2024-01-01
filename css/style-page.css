@@ -1,0 +1,258 @@
+/* Reset some default styles for lists and anchor tags */
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(to right, #001c30, black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.website-name {
+  font-size: 24px;
+}
+
+.menu {
+  justify-content: flex-end; /* Justifikasi menu ke kanan */
+  padding-right: 20px; /* Atur padding di sebelah kanan menu */
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  position: relative; /* Menambahkan posisi relatif untuk mengatur garis bawah */
+}
+
+.menu a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Ketebalan garis bawah */
+  bottom: -10px; /* Mengatur jarak dari teks */
+  left: 50%; /* Mulai dari tengah */
+  transform: translateX(-50%); /* Membuat garis bawah berada di tengah */
+  background: #ffc800; /* Warna garis bawah */
+  transition: width 0.3s; /* Efek transisi lebar */
+}
+
+.menu a:hover::before {
+  width: 100%; /* Membuat garis bawah muncul saat hover */
+}
+
+.quotes {
+  background: linear-gradient(#001c30, #001c30, black, black);
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  height: calc(100vh - 60px);
+  position: relative; /* Menambahkan posisi relatif untuk elemen .quotes */
+}
+
+.quotes-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Menambahkan overlay transparan */
+}
+
+.quotes-content {
+  position: relative; /* Menambahkan posisi relatif pada .quotes-content */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  z-index: 1; /* Memberikan z-index lebih tinggi untuk menutupi overlay */
+}
+
+.quote-container {
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.quote-container span {
+  background: linear-gradient(90deg, #748e63 50%, #99b080 50%);
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animasi ganti warna */
+@keyframes changeColor {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Gaya untuk teks dalam .quote-container */
+.quote-container p:first-child {
+  background-image: linear-gradient(to right, #001c30, white, #001c30);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: changeColor 5s infinite; /* Animasi perubahan warna */
+}
+
+p {
+  margin: 10px 0;
+}
+
+.btn-quote {
+  background: #ffc800;
+  color: #001c30;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+  margin-top: 20px; /* Menambahkan margin-top untuk menurunkan tombol */
+}
+
+.btn-quote:hover {
+  background: #001c30;
+  color: #ffc800;
+}
+
+#film-section {
+  background: #001c30;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  height: 100vh; /* Reset some default styles */
+  body,
+  h1,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Add some basic styling */
+  .film-container {
+    border-radius: 10px; /* Menambahkan lekukan pada ujung border */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #001c30; /* Ganti warna latar belakang */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    border-radius: 10px; /* Menambahkan lekukan pada ujung gambar */
+  }
+
+  .film-details {
+    flex: 1;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px; /* Memberikan jarak dari teks rating */
+  }
+
+  .rating {
+    font-size: 24px;
+    color: yellow;
+    display: flex;
+    align-items: center;
+  }
+
+  .star {
+    margin-right: 5px;
+  }
+}
+
+.film-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.film-list {
+  display: flex;
+  justify-content: center;
+}
+
+.film-item {
+  margin: 10px;
+  border: 2px solid #ffc800; /* Tambahkan border dengan warna kuning (#ffc800) */
+  border-radius: 10px; /* Tambahkan lekukan dengan border-radius */
+  padding: 3px; /* Berikan jarak antara teks dan border */
+  text-align: center;
+}
+
+.film-item img {
+  width: 200px;
+  height: 300px;
+}
+
+.film-item a {
+  text-decoration: none; /* Menghilangkan garis bawah tautan */
+  color: white; /* Mengatur warna teks tautan menjadi hitam */
+}
+
+#akan-tayang-section {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  height: 100vh; /* Mengatur tinggi hingga layar penuh */
+}
+
+.footer {
+  background: linear-gradient(to right, #001c30, black);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer .logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.footer .website-name {
+  font-size: 24px;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}

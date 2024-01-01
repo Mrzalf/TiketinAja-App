@@ -1,0 +1,90 @@
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(to right, #001c30, black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.website-name {
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  color: white;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  position: relative; /* Menambahkan posisi relatif untuk mengatur garis bawah */
+}
+
+.menu a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Ketebalan garis bawah */
+  bottom: -10px; /* Mengatur jarak dari teks */
+  left: 50%; /* Mulai dari tengah */
+  transform: translateX(-50%); /* Membuat garis bawah berada di tengah */
+  background: #ffc800; /* Warna garis bawah */
+  transition: width 0.3s; /* Efek transisi lebar */
+}
+
+.menu a:hover::before {
+  width: 100%; /* Membuat garis bawah muncul saat hover */
+}
+
+/* Tambahkan gaya untuk navbar yang di-scroll */
+.scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  animation: slideDown 0.3s; /* Animasi saat navbar muncul */
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

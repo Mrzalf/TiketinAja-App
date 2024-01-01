@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(black, black, #001c30, #001c30);
+  margin: 0;
+  padding: 0;
+}
+
+/* ... CSS sebelumnya ... */
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  /* Mengubah warna latar belakang */
+  background: linear-gradient(#001c30, #001c30, black, black);
+  /* Menambahkan warna teks */
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* ... CSS lainnya ... */
+
+.profile {
+  text-align: center;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.info {
+  text-align: left;
+}
+
+.info p {
+  margin-bottom: 5px;
+}

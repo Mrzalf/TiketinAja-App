@@ -1,0 +1,78 @@
+/* Reset CSS */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#001c30, #001c30, black, black);
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Tabel */
+table {
+  color: #000;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+th {
+  background-color: #001c30;
+  color: #1a1058;
+}
+
+tr:nth-child(odd) {
+  background: linear-gradient(#4f6f52, #739072, #86a789, #d2e3c8);
+}
+
+tr:nth-child(even) {
+  background: linear-gradient(#4f6f52, #739072, #86a789, #d2e3c8);
+}
+
+/* Input */
+.container input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.container select {
+  width: 100%;
+  padding: 5px;
+  font-size: 12px;
+}
+
+/* Form */
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* Button */
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container button {
+  margin-top: 10px;
+}
+
+.border {
+  border: 2px solid #3498db; /* Ubah sesuai warna yang diinginkan */
+  border-radius: 10px; /* Untuk sudut elemen yang lebih lembut */
+  padding: 20px; /* Spasi dalam kontainer */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+  background: linear-gradient(#001c30, #001c30, black, black, #001c30, #001c30);
+}

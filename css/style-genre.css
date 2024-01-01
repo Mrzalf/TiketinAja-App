@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#001c30, #001c30, black, black);
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.genre-title {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.film-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.film-item {
+  text-align: center;
+  width: 18%;
+  margin: 0 2%;
+  margin-bottom: 20px;
+  background-color: #001c30;
+  border: 3px solid #001c30;
+  border-radius: 10px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.film-item:hover {
+  background: linear-gradient(to bottom, black, #001c30);
+  border-color: #001c30;
+  transform: translateY(-5px);
+  margin-top: 5px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6);
+}
+
+.film-item img {
+  max-width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.film-item h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.read-more-button {
+  background: #ffc800; /* Warna garis bawah */
+  color: black; /* Warna teks */
+  border: none; /* Menghapus border tombol */
+  padding: 10px 20px; /* Padding tombol */
+  border-radius: 5px; /* Sudut tombol yang dibulatkan */
+  text-align: center;
+  margin-top: 50px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px; /* Jarak antara teks dengan elemen di atasnya */
+  cursor: pointer; /* Ganti cursor saat dihover ke pointer */
+  transition: background-color 0.3s;
+  width: 80%;
+}
+
+.read-more-button:hover {
+  background-color: #001c30; /* Warna latar belakang saat tombol dihover */
+  color: #ffc800; /* Warna teks saat tombol dihover */
+}

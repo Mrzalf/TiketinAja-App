@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(to right, #001c30, black);
+  height: 85vh;
+  /* background-color: black; */
+  font-size: 14px;
+  color: white;
+}
+
+/* Animasi ganti warna */
+@keyframes changeColor {
+  0% {
+    color: #001c30; /* Warna awal */
+  }
+  50% {
+    color: #0f2167; /* Warna pertengahan */
+  }
+  100% {
+    color: black; /* Warna akhir */
+  }
+}
+
+/* Gaya untuk judul selamat datang */
+.welcome {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* Animasi yang akan dijalankan pada judul selamat datang */
+.title1 {
+  animation: changeColor 5s infinite; /* Animasi keyframe */
+}
+
+/* Ganti elemen form dengan kelas tertentu jika diperlukan */
+.form-container {
+  width: 80%; /* Atur lebar form sesuai kebutuhan */
+  /* Tambahkan properti lain untuk tata letak form */
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Mencentralkan horizontal */
+  align-items: center; /* Mencentralkan vertikal */
+  flex-direction: column;
+  background-color: #001c30;
+  width: 35%;
+  margin: 15px auto;
+  overflow: hidden;
+  border-radius: 5%;
+  box-shadow: 0 0 10px rgba(255, 223, 186, 0.7);
+  padding-bottom: 30px;
+}
+
+.register,
+.login {
+  padding: 50px 0 5px 0;
+  border-radius: 5% 5% 100% 100%;
+  background: linear-gradient(to bottom, #001c30, black);
+  width: 100%;
+  height: 20vh;
+  transition: 0.8s ease-in-out;
+  border: #001c30;
+  /* box-shadow: 0 0 10px rgba(255, 223, 186, 0.7); */
+}
+
+form {
+  padding: 10px;
+  position: relative;
+  background-color: rgba(255, 0, 0, 0);
+  transform: translate(-0%, -0%);
+}
+
+.title {
+  text-align: center;
+}
+
+h1 {
+  -webkit-text-stroke: 1px rgb(255, 255, 255); /* Lebar garis dan warna (untuk browser yang mendukung, seperti Chrome) */
+  color: transparent; /* Membuat teks utama menjadi transparan */
+}
+
+table td {
+  padding: 5px 10px;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  border: solid 5px white;
+  color: black;
+}
+
+input:focus {
+  box-shadow: 0 0 10px rgba(255, 223, 186, 0.7);
+}
+
+#laki,
+#perempuan {
+  width: auto;
+}
+
+.button {
+  text-align: center;
+}
+
+button {
+  margin-top: 15px;
+  padding: 5px;
+  width: 100px;
+  background: linear-gradient(to right, #3559e0, #0f2167, #3559e0);
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s, transform 0.2s; /* Transisi warna latar belakang dan transformasi */
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  box-shadow: 0 0 10px rgba(255, 223, 186, 0.7);
+}
+
+button:active {
+  background-color: #00457e; /* Warna latar belakang saat ditekan */
+  transform: scale(0.95); /* Perkecil tombol saat ditekan */
+}
+
+a {
+  text-decoration: none;
+  color: #19a7ce;
+}
+
+.link {
+  text-align: right;
+}
+
+/* Gaya untuk input username dan password */
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 6px 0 6px 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 12px;
+  background-color: #f6f6f6;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #19a7ce; /* Warna border saat input aktif/fokus */
+  box-shadow: 0 0 4px rgba(25, 167, 206, 0.5); /* Efek shadow saat input aktif/fokus */
+}

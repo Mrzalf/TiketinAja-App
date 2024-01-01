@@ -1,0 +1,59 @@
+/* Styling untuk body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#001c30, #001c30, black, black);
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Styling untuk container */
+.container {
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border: 2px solid #fff;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Style untuk input dan label */
+.form-group label {
+  color: #fff;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Ganti warna latar belakang, warna teks, dan ukuran font */
+select {
+  background-color: #f2f2f2; /* Warna latar belakang */
+  color: #333; /* Warna teks */
+  font-size: 16px; /* Ukuran font */
+  /* tambahkan atribut lainnya sesuai kebutuhan */
+}
+
+/* Ganti warna latar belakang saat opsi dipilih */
+select option:checked {
+  background-color: #ccc; /* Warna latar belakang saat dipilih */
+  color: #fff; /* Warna teks saat dipilih */
+}
